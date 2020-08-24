@@ -11,6 +11,7 @@ class Quizzer extends Component {
         score: 0,
         responses: 0
     };
+
     getQuestions = () => {
         quizDB().then(question => {
             this.setState({
@@ -18,6 +19,7 @@ class Quizzer extends Component {
             })
         })
     }
+
     computeAnswer = (answer, correctAnswer) => {
         if (answer === correctAnswer) {
             this.setState({
@@ -28,16 +30,18 @@ class Quizzer extends Component {
             responses: this.state.responses < 5 ? this.state.responses + 1 : 5
         })
     }
-    playAgain = () =>{
+
+    playAgain = () => {
         this.getQuestions();
         this.setState({
             score: 0,
-            responses:0
+            responses: 0
         })
     }
-    componentDidMount() {
+    componentDidMount = () => {
         this.getQuestions();
     }
+
     render() {
         return (
             <div className='container'>
@@ -45,16 +49,17 @@ class Quizzer extends Component {
                 {this.state.questionsDB.length > 0 &&
                     this.state.responses < 5 &&
                     this.state.questionsDB.map(
-                        ({ question, answers, correct, questionID }) =>
+                        ({ question, answers, correct, questionId }) =>
                             <QuestionBox
                                 question={question}
                                 options={answers}
-                                key={questionID}
+                                key={questionId}
                                 selected={answer => this.computeAnswer(answer, correct)}
                             />
                     )
                 }
-                {this.state.responses === 5 ? (<Result score={this.state.score} playAgain={this.playAgain} />) : null}
+                {this.state.responses === 5 ? (<Result score={this.state.score}
+                    playAgain={this.playAgain} />) : null}
             </div>
         );
     }

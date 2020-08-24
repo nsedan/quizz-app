@@ -1,32 +1,49 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Rubik:wght@700&display=swap');
 
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
   position: absolute;
-  width: 1024px;
-  height: 800px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 10px;
+  padding: 0.5rem;
   box-sizing: border-box;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    height: 800px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    height: 800px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .title {
   position: relative;
+  font-family: 'Rubik', sans-serif;
   background-color: rgba(0, 0, 0, 1);
   color: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 1rem;
   font-size: 1.8em;
+  font-weight: bold;
   border-radius: 5px;
+  text-align: center;
 }
 
 .question {
@@ -42,47 +59,47 @@
   padding: 15px;
   box-sizing: border-box;
   background-color: rgb(250, 250, 250);
+  border-radius: 5px;
 }
 
 .answerBtn {
   position: relative;
-  padding: 10px;
-  background-color: rgb(250, 151, 37);
+  padding: 0.5rem;
+  background-color: rgb(41, 109, 212);
   display: inline-block;
-  margin: 10px;
+  margin: 0.5rem;
   outline: none;
   border: none;
   font-size: 1em;
   color: rgb(255, 255, 255);
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .score-board {
   position: relative;
-  height: 700px;
 }
 
 .score {
-  position: absolute;
-  width: 1024px;
   font-size: 3em;
-  top: 250px;
+  margin-top: 10rem;
   text-align: center;
 }
 
 .playBtn {
   position: absolute;
   font-size: 1.4em;
-  padding: 10px;
-  top: 350px;
-  background-color: rgb(46, 182, 46);
+  padding: 0.5rem;
+  background-color: rgb(33, 49, 190);
   color: rgb(255, 255, 255);
-  width: 150px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
+  width: 10rem;
+  left: 0;
+  right: 0;
+  margin: 5rem auto;
   outline: none;
   cursor: pointer;
+  font-weight: bold; 
+  border-radius: 1rem;
+  border: none;
 }
