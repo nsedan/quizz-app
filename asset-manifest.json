@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/quizzer-app/static/css/main.f760a3fa.chunk.css",
+    "main.js": "/quizzer-app/static/js/main.774c9655.chunk.js",
+    "main.js.map": "/quizzer-app/static/js/main.774c9655.chunk.js.map",
+    "runtime-main.js": "/quizzer-app/static/js/runtime-main.f55794ab.js",
+    "runtime-main.js.map": "/quizzer-app/static/js/runtime-main.f55794ab.js.map",
+    "static/js/2.518df9da.chunk.js": "/quizzer-app/static/js/2.518df9da.chunk.js",
+    "static/js/2.518df9da.chunk.js.map": "/quizzer-app/static/js/2.518df9da.chunk.js.map",
+    "index.html": "/quizzer-app/index.html",
+    "precache-manifest.c06ca9a8ea7366f948f1a9c6ec8247eb.js": "/quizzer-app/precache-manifest.c06ca9a8ea7366f948f1a9c6ec8247eb.js",
+    "service-worker.js": "/quizzer-app/service-worker.js",
+    "static/css/main.f760a3fa.chunk.css.map": "/quizzer-app/static/css/main.f760a3fa.chunk.css.map",
+    "static/js/2.518df9da.chunk.js.LICENSE.txt": "/quizzer-app/static/js/2.518df9da.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f55794ab.js",
+    "static/js/2.518df9da.chunk.js",
+    "static/css/main.f760a3fa.chunk.css",
+    "static/js/main.774c9655.chunk.js"
+  ]
+}
