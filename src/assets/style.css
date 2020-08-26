@@ -77,6 +77,10 @@
   cursor: pointer;
 }
 
+.selectedBtn{
+    background-color: rgb(53, 187, 35);
+}
+
 .score-board {
   position: relative;
 }
